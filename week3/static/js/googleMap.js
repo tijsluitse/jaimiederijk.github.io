@@ -23,13 +23,13 @@ var googleMap = {
 		    };
 
 		    // Attach a map to the DOM Element, with the defined settings
-			map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions );
+			map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions );
 
 		}
 	},
 	setupMarker : function (target) {
 		var image = {
-			url: "static/images/dot.png",
+			url: 'static/images/dot.png',
 		    scaledSize: new google.maps.Size(20, 20), // scaled size
 		    origin: new google.maps.Point(0,0), // origin
 		    anchor: new google.maps.Point(0, 0) // anchor

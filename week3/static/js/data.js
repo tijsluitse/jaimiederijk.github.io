@@ -1,8 +1,8 @@
 var data = {
 	config : {
-		issBaseUrl:"https://api.wheretheiss.at/v1/",
-		movieBaseUrl:"http://api.themoviedb.org/3/",
-		movieApiKey:"3974f78e9e581f953c413271e51a527a",
+		issBaseUrl:'https://api.wheretheiss.at/v1/',
+		movieBaseUrl:'http://api.themoviedb.org/3/',
+		movieApiKey:'3974f78e9e581f953c413271e51a527a',
 	},
 
 	requestDataIss:function (url, target) {	//target = under what name should the the data be saved

@@ -8,16 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="static/stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,600' rel='stylesheet' type='text/css'>
-
-
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li data-section=""><a href="#" title="">About</a></li>
-                <li data-section="#movies"><a href="#movies" title="">movies</a></li>
-                <li data-section="#iss"><a href="#iss" title="">iss</a></li>
+                <li data-section=""><a href="#" title="about">About</a></li>
+                <li data-section="#movies"><a href="#movies" title="movies">Movies</a></li>
+                <li data-section="#iss"><a href="#iss" title="iss">Iss</a></li>
             </ul>
         </nav>
     </header>
@@ -26,6 +24,7 @@
     	<h1>About</h1>
         <p>This single page web app allows you to search for movies and shows the real time location of the International space station.</p>
     </section>
+   
     <section id="searchmovies">
     	<h1>Movies</h1>
         <form>
@@ -44,28 +43,30 @@
                 </a>
             </article>
         </div>
-
-
     </section>
+
     <section id="onemovie">
-        <div id="template-movie">
+        <div id="templateMovie">
             <article >
                     <h2 data-bind="title"></h2>
                     <p data-bind="overview"></p>
             </article>
         </div>
     </section>
+
     <section id="isstracker">
         <div id="map-canvas"></div>
     </section>
 
+    <!-- Libs -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script type="text/javascript" src="static/js/lib/transparency.min.js"></script>
     <script type="text/javascript" src="static/js/lib/promise.js"></script>
     <script type="text/javascript" src="static/js/lib/underscore-min.js"></script>
-    <!-- <script type="text/javascript" src="static/js/hammer-time.min.js"></script> -->
     <script type="text/javascript" src="static/js/lib/hammer.min.js"></script>
     <script type="text/javascript" src="static/js/lib/routie.min.js"></script>
-    <script type="text/javascript" src="static/js/app.js"></script>
+
+    <!-- Launcher -->
+    <script type="text/javascript" src="static/js/launcher.js"></script>
 </body>
 </html>

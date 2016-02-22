@@ -7,8 +7,8 @@ var htmlElements = {
 	home: document.querySelector('#start'),
 	iss: document.querySelector('#isstracker'),
 	movieSearch: document.querySelector('#searchmovies form'),
-	moviesTemplate: document.querySelector("#template-movies"),
-	moviesTemplateLoader: document.querySelector("#template-movies div")
+	moviesTemplate: document.querySelector('#template-movies'),
+	moviesTemplateLoader: document.querySelector('#template-movies div')
 };
 
 module.exports = htmlElements;
